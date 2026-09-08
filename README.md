@@ -109,7 +109,7 @@ Responsável pela lógica do sistema, autenticação, sessões e comunicação c
 
 ### MySQL
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gmg6JydW3nQI3S6DmiByn2JMXvDsu-2WuGDKSQpm0A&s=10" alt="MySQL" width="125">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gmg6JydW3nQI3S6DmiByn2JMXvDsu-2WuGDKSQpm0A&s=10" alt="MySQL" width="100">
 
 Responsável pelo armazenamento dos jogadores e suas estatísticas.
 
