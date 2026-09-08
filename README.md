@@ -1,95 +1,150 @@
 # Game Center
 
-**O projeto "Game Center" foi desenvolvido com o objetivo de aprendizagem e desenvolvimento.**
+<u><strong>O projeto "Game Center" foi desenvolvido com o objetivo de aprendizagem e desenvolvimento.</strong></u>
 
 ---
 
 ## Sobre o projeto
 
-O Game Center é um projeto desenvolvido em Python com o objetivo de colocar em prática conhecimentos de programação, utilizando funções, estruturas de repetição, condicionais, arquivos JSON e outros conceitos.
+O Game Center é um projeto de aprendizagem que começou como um programa em Python e atualmente está sendo transformado em uma aplicação web.
 
-O projeto reúne diferentes jogos em um único programa, permitindo que o jogador utilize uma conta e acumule vitórias em cada jogo.
+A versão web está sendo desenvolvida utilizando PHP, MySQL, HTML e CSS, com o objetivo de aplicar na prática os conhecimentos adquiridos durante meus estudos de Desenvolvimento de Sistemas.
 
----
-
-## Jogos
-
-O Game Center possui atualmente os seguintes jogos:
-
-### Jokenpô
-
-O clássico jogo de Pedra, Papel e Tesoura, jogado contra o computador.
-
-### Jogo da Forca
-
-O jogador deve descobrir uma palavra antes que suas tentativas acabem.
-
-O jogo possui diferentes categorias de palavras:
-
-- Animais;
-- Frutas;
-- Países.
-
-### Jogo da Velha
-
-Jogo da Velha contra o computador, utilizando um tabuleiro de 3x3.
-
-### Blackjack 21
-
-Um jogo baseado no Blackjack, no qual o objetivo é chegar o mais próximo possível de 21 sem ultrapassar esse valor.
-
-### Desafio de Reflexo
-
-Um desafio no qual o jogador precisa reagir rapidamente ao comando apresentado pelo programa.
-
-O tempo de reação é utilizado para determinar se o jogador conseguiu completar o desafio.
+O projeto ainda está em desenvolvimento e novas funcionalidades serão adicionadas nas próximas versões.
 
 ---
 
-## Sistema de jogadores
+## Aviso
 
-O Game Center possui um sistema simples de cadastro e login de jogadores.
+Para executar a versão web do Game Center, é necessário utilizar o XAMPP, pois o projeto utiliza PHP e MySQL.
 
-Cada jogador possui uma senha e suas próprias estatísticas de vitórias em cada jogo.
+Também é necessário utilizar o MySQL Workbench para executar os arquivos `.sql` localizados na pasta `executaveis_sql`.
 
-As informações dos jogadores são armazenadas em um arquivo chamado `jogadores.json`.
+Antes de executar o sistema, siga os seguintes passos:
 
-O arquivo permite que os dados sejam mantidos mesmo depois que o programa é encerrado.
+1. Instale e abra o XAMPP.
+2. Inicie os serviços Apache e MySQL.
+3. Abra o MySQL Workbench e conecte-se ao servidor MySQL.
+4. Execute os arquivos `.sql` presentes na pasta `executaveis_sql`.
+5. Coloque a pasta do projeto dentro da pasta `htdocs` do XAMPP.
+6. Acesse o Game Center pelo navegador através do servidor local.
+
+O banco de dados precisa estar criado e configurado corretamente antes de utilizar o sistema.
 
 ---
 
-## Ranking
+## Versão Web
 
-O projeto possui um sistema de ranking que utiliza as vitórias acumuladas em cada jogo.
+A versão web do Game Center possui atualmente um sistema de cadastro e login de jogadores, utilizando um banco de dados MySQL para armazenar as informações.
 
-As estatísticas dos jogos são somadas para calcular a pontuação total de cada jogador.
+Cada jogador possui suas próprias estatísticas, que serão utilizadas futuramente pelos jogos e pelo sistema de ranking.
 
-Os jogadores são organizados de acordo com essa pontuação, formando um ranking geral.
+### Cadastro
 
-Os três primeiros colocados recebem uma medalha de acordo com sua posição:
+O sistema permite que novos jogadores criem uma conta utilizando um nome de usuário e uma senha.
 
-- 1º lugar — Ouro;
-- 2º lugar — Prata;
-- 3º lugar — Bronze.
+Durante o cadastro, são realizadas algumas validações, como:
+
+- Verificação de campos obrigatórios;
+- Confirmação da senha;
+- Verificação do tamanho mínimo da senha;
+- Impedimento de espaços na senha;
+- Verificação se o nome de usuário já está cadastrado.
+
+As senhas são armazenadas utilizando `password_hash()`, evitando que sejam salvas diretamente no banco de dados.
+
+### Login
+
+Após realizar o cadastro, o jogador pode entrar utilizando seu nome de usuário e senha.
+
+A autenticação utiliza `password_verify()` para verificar a senha armazenada no banco de dados.
+
+O sistema também utiliza sessões para manter o jogador autenticado enquanto estiver utilizando o Game Center.
+
+### Banco de Dados
+
+O projeto utiliza MySQL para armazenar os dados dos jogadores.
+
+O banco de dados possui atualmente duas tabelas principais:
+
+- `jogadores` — armazena os dados de acesso dos jogadores;
+- `estatisticas` — armazena as estatísticas de cada jogador.
+
+Cada jogador possui uma relação de 1 para 1 com suas estatísticas.
+
+### Segurança
+
+O sistema utiliza alguns recursos para melhorar a segurança do projeto, como:
+
+- `password_hash()` para armazenamento das senhas;
+- `password_verify()` para autenticação;
+- Prepared Statements para as consultas ao banco de dados;
+- Sessões para controle de autenticação;
+- Validação dos dados recebidos pelos formulários;
+- Transações no cadastro do jogador e suas estatísticas.
+
+### Interface
+
+A interface do Game Center está sendo desenvolvida utilizando HTML e CSS, com auxílio do W3.CSS.
+
+As páginas seguem uma estrutura visual padrão, contendo:
+
+- Cabeçalho;
+- Conteúdo principal;
+- Rodapé;
+- Formulários;
+- Mensagens de erro e sucesso.
+
+O projeto possui uma identidade visual própria baseada principalmente nas cores roxo, laranja, azul e amarelo.
 
 ---
 
 ## Tecnologias utilizadas
 
-### Python
+### PHP
 
-Utilizado para desenvolver toda a lógica do Game Center, incluindo os jogos, sistema de jogadores, ranking e armazenamento das informações.
+<img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP">
 
-### JSON
+Responsável pela lógica do sistema, autenticação, sessões e comunicação com o banco de dados.
 
-Utilizado para armazenar os dados dos jogadores e suas estatísticas no arquivo `jogadores.json`.
+### MySQL
+
+<img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+
+Responsável pelo armazenamento dos jogadores e suas estatísticas.
+
+### HTML
+
+<img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5">
+
+Utilizado para estruturar as páginas do Game Center.
+
+### CSS
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+
+Utilizado para a estilização e identidade visual do projeto.
+
+### W3.CSS
+
+<img src="https://www.w3schools.com/w3css/img_w3css.svg" alt="W3.CSS">
+
+Utilizado como apoio na estilização dos elementos da interface.
+
+---
+
+## Origem do projeto
+
+O Game Center começou como um projeto desenvolvido em Python, contendo alguns jogos e um sistema de ranking.
+
+A versão web é a continuação desse projeto, trazendo a mesma ideia para uma aplicação utilizando tecnologias web.
+
+---
 
 ## Status do projeto
 
-**Versão atual: v0.1**
+**Versão atual: v0.2**
 
-Esta é a versão inicial do Game Center, desenvolvida em Python.
+O sistema de cadastro, login, logout, sessões, banco de dados e interface inicial já estão funcionando.
 
-O projeto possui os jogos, sistema de jogadores, armazenamento em JSON e ranking funcionando.
-
-Futuramente, o projeto será expandido e transformado em uma aplicação web utilizando tecnologias como PHP, MySQL, HTML e CSS.
+O projeto continuará recebendo atualizações, incluindo novos jogos e funcionalidades.
