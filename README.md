@@ -109,7 +109,7 @@ Responsável pela lógica do sistema, autenticação, sessões e comunicação c
 
 ### MySQL
 
-<img src="https://www.mysql.com/common/logos/powered-by-mysql-125x64.png" alt="MySQL" width="125">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gmg6JydW3nQI3S6DmiByn2JMXvDsu-2WuGDKSQpm0A&s=10" alt="MySQL" width="125">
 
 Responsável pelo armazenamento dos jogadores e suas estatísticas.
 
@@ -127,7 +127,7 @@ Utilizado para a estilização e identidade visual do projeto.
 
 ### W3.CSS
 
-<img src="https://www.w3schools.com/w3css/img_w3css.svg" alt="W3.CSS" width="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV87omqLi9DKq4QNOz-rJgGO6wdsFfeJGyX0uEIDu2A&s=10" alt="W3.CSS" width="100">
 
 Utilizado como apoio na estilização dos elementos da interface.
 
