@@ -103,31 +103,31 @@ O projeto possui uma identidade visual própria baseada principalmente nas cores
 
 ### PHP
 
-<img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP">
+<img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP" width="100">
 
 Responsável pela lógica do sistema, autenticação, sessões e comunicação com o banco de dados.
 
 ### MySQL
 
-<img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+<img src="https://www.mysql.com/common/logos/powered-by-mysql-125x64.png" alt="MySQL" width="125">
 
 Responsável pelo armazenamento dos jogadores e suas estatísticas.
 
 ### HTML
 
-<img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5">
+<img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5" width="100">
 
 Utilizado para estruturar as páginas do Game Center.
 
 ### CSS
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="100">
 
 Utilizado para a estilização e identidade visual do projeto.
 
 ### W3.CSS
 
-<img src="https://www.w3schools.com/w3css/img_w3css.svg" alt="W3.CSS">
+<img src="https://www.w3schools.com/w3css/img_w3css.svg" alt="W3.CSS" width="100">
 
 Utilizado como apoio na estilização dos elementos da interface.
 
