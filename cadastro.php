@@ -84,7 +84,7 @@ if (isset($_SESSION["erro_cadastro"])) {
 
                 <div class="campo-formulario">
 
-                    <label for="senha">Senha:</label>
+                    <label for="senha">Senha (Mínimo 6 caracteres):</label>
 
                     <input
                         type="password"
