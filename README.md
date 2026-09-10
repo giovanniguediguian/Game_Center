@@ -122,6 +122,7 @@ A versão web possui atualmente cinco jogos:
 
 \- Jokenpô;
 
+<<<<<<< HEAD
 \- Jogo da Forca;
 
 \- Jogo da Velha;
@@ -147,34 +148,53 @@ Também existem rankings individuais para cada jogo, mostrando os 10 jogadores c
 **### PHP**
 
 \<img *src*="[https://www.php.net/images/logos/new-php-logo.svg](https://www.php.net/images/logos/new-php-logo.svg)" *alt*="PHP">
+=======
+<img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP" width="100">
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
 
 Responsável pela lógica do sistema, autenticação, sessões e comunicação com o banco de dados.
 
 **### MySQL**
 
+<<<<<<< HEAD
 \<img *src*="[https://www.mysql.com/common/logos/logo-mysql-170x115.png](https://www.mysql.com/common/logos/logo-mysql-170x115.png)" *alt*="MySQL">
+=======
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gmg6JydW3nQI3S6DmiByn2JMXvDsu-2WuGDKSQpm0A&s=10" alt="MySQL" width="100">
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
 
 Responsável pelo armazenamento dos jogadores e suas estatísticas.
 
 **### HTML**
 
+<<<<<<< HEAD
 \<img *src*="[https://www.w3.org/html/logo/downloads/HTML5\_Badge\_512.png](https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png)" *alt*="HTML5">
+=======
+<img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5" width="100">
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
 
 Utilizado para estruturar as páginas do Game Center.
 
 **### CSS**
 
+<<<<<<< HEAD
 \<img *src*="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg)" *alt*="CSS3">
+=======
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="100">
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
 
 Utilizado para a estilização e identidade visual do projeto.
 
 **### JavaScript**
 
+<<<<<<< HEAD
 Utilizado na lógica e funcionamento dos jogos, incluindo interações, controles, pontuação e elementos que precisam ser atualizados durante as partidas.
 
 **### W3.CSS**
 
 \<img *src*="[https://www.w3schools.com/w3css/img\_w3css.svg](https://www.w3schools.com/w3css/img_w3css.svg)" *alt*="W3.CSS">
+=======
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV87omqLi9DKq4QNOz-rJgGO6wdsFfeJGyX0uEIDu2A&s=10" alt="W3.CSS" width="100">
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
 
 Utilizado como apoio na estilização dos elementos da interface.
 
@@ -194,6 +214,10 @@ Depois, o projeto passou a ser desenvolvido como uma aplicação web, mantendo a
 
 O sistema de cadastro, login, logout, sessões, banco de dados, interface, jogos e sistema de ranking já estão funcionando.
 
+<<<<<<< HEAD
 A versão atual possui cinco jogos: Jokenpô, Jogo da Forca, Jogo da Velha, Blackjack 21 e Desafio de Reflexo.
 
 O projeto continuará recebendo atualizações, incluindo novas funcionalidades e melhorias.
+=======
+O projeto continuará recebendo atualizações, incluindo novos jogos e funcionalidades.
+>>>>>>> a7467f281086b917d1ac2d68de35d82dec906ccd
