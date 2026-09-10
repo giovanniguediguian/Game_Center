@@ -1,0 +1,311 @@
+/* JOGO DA FORCA */
+
+
+/* ESTRUTURA DA PÁGINA */
+
+main {
+    display: block;
+    padding: 40px 20px;
+}
+
+.conteudo-forca {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.titulo-jogo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #18A8FF !important;
+}
+
+.descricao-jogo {
+    margin-bottom: 30px;
+    color: #B5B5C9;
+    font-size: 17px;
+}
+
+
+/* PLACAR */
+
+.placar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.placar > div {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #15151F;
+    border: 2px solid #292936;
+    text-align: center;
+}
+
+.placar span {
+    display: block;
+    margin-bottom: 8px;
+    color: #B5B5C9;
+    font-size: 14px;
+}
+
+.placar strong {
+    display: block;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+
+/* CATEGORIAS */
+
+#selecao-categoria {
+    margin-top: 30px;
+}
+
+#selecao-categoria h3 {
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.categorias button {
+    min-width: 130px;
+    padding: 12px 20px !important;
+    border-radius: 8px;
+    background-color: #6C4DFF !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.categorias button:hover {
+    background-color: #9B8AFF !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 77, 255, 0.35);
+}
+
+
+/* CATEGORIA ATUAL */
+
+.categoria-atual {
+    margin: 20px 0;
+    color: #B5B5C9;
+    text-align: center;
+}
+
+.categoria-atual strong {
+    color: #18A8FF;
+}
+
+
+/* ÁREA DA FORCA */
+
+.forca {
+    width: 700px;
+    min-height: 220px;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: #15151F;
+    border: 2px solid #292936;
+}
+
+#desenho-forca {
+    width: 100%;
+    height: 120px;
+}
+
+
+/* PALAVRA */
+
+.palavra {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#palavra {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+
+/* DICA */
+
+.area-dica {
+    margin: 25px 0;
+}
+
+#botao-dica {
+    padding: 10px 25px !important;
+    border-radius: 8px;
+    background-color: #292936 !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+#botao-dica:hover {
+    background-color: #4D7CFE !important;
+    transform: translateY(-2px);
+}
+
+#botao-dica:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#dica {
+    min-height: 25px;
+    margin-top: 12px;
+    color: #B5B5C9;
+}
+
+
+/* ENTRADA */
+
+.entrada {
+    margin: 25px 0;
+}
+
+.entrada input {
+    width: 350px;
+    padding: 12px 15px;
+    border: 2px solid #292936;
+    border-radius: 7px;
+    background-color: #15151F;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.entrada input:focus {
+    border-color: #6C4DFF;
+    box-shadow: 0 0 8px rgba(108, 77, 255, 0.25);
+}
+
+.entrada button {
+    margin-left: 8px;
+    padding: 12px 25px !important;
+    border-radius: 8px;
+    background-color: #6C4DFF !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.entrada button:hover {
+    background-color: #9B8AFF !important;
+    transform: translateY(-2px);
+}
+
+.entrada button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* LETRAS TENTADAS */
+
+#letras-tentadas {
+    margin: 25px auto;
+    color: #B5B5C9;
+    text-align: center;
+}
+
+#letras-tentadas p {
+    margin-bottom: 8px;
+}
+
+#lista-letras {
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* MENSAGENS */
+
+#mensagem {
+    width: 700px;
+    min-height: 50px;
+    margin: 20px auto;
+    padding: 14px 20px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+
+/* MENSAGEM NEUTRA */
+
+.mensagem-neutra {
+    background-color: #292936;
+    border: 2px solid #3A3A4A;
+}
+
+
+/* MENSAGEM DE ACERTO */
+
+.mensagem-acerto {
+    background-color: #4CAF50;
+    border: 2px solid #66BB6A;
+}
+
+
+/* MENSAGEM DE ERRO */
+
+.mensagem-erro {
+    background-color: #C62828;
+    border: 2px solid #E53935;
+}
+
+
+/* MENSAGEM DE VITÓRIA */
+
+.mensagem-vitoria {
+    background-color: #FF7A00;
+    border: 2px solid #FF9933;
+}
+
+
+/* MENSAGEM DE DERROTA */
+
+.mensagem-derrota {
+    background-color: #4B35B0;
+    border: 2px solid #39288A;
+}
+
+
+/* BOTÃO NOVA PARTIDA */
+
+#botao-nova-partida {
+    margin-top: 10px;
+    padding: 12px 25px !important;
+    border-radius: 8px;
+    background-color: #6C4DFF !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+#botao-nova-partida:hover {
+    background-color: #9B8AFF !important;
+    transform: translateY(-3px);
+}

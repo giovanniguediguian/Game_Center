@@ -1,11 +1,14 @@
 /* Reset CSS */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 body {
+
     min-height: 100vh;
 
     display: flex;
@@ -17,16 +20,17 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 
     color: #F5F5FA;
+
 }
 
 
 /* CABEÇALHO */
 
 header {
+
     margin: 30px 50px 0;
     padding: 30px 20px 35px;
 
@@ -39,9 +43,12 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 
     animation: aparecer 0.7s ease;
+
 }
 
+
 .logo {
+
     width: 180px;
     height: 180px;
 
@@ -50,37 +57,49 @@ header {
     border-radius: 30px;
 
     transition: 0.3s ease;
+
 }
+
 
 .logo:hover {
+
     transform: scale(1.04) rotate(-1deg);
+
 }
 
+
 .slogan {
+
     margin-top: 5px;
 
     color: #75CFFF;
 
     font-size: 18px;
     font-weight: bold;
+
 }
 
 
 /* CONTEÚDO PRINCIPAL */
 
 main {
+
     flex: 1;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     padding: 70px 20px;
+
 }
 
+
 .card-conteudo {
+
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
 
     padding: 40px;
 
@@ -93,37 +112,52 @@ main {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 
     animation: subir 0.6s ease;
+
 }
 
+
 .card-conteudo h1 {
+
     margin-bottom: 20px;
 
     color: #F5F5FA;
+
 }
 
+
 .card-conteudo h2 {
+
     margin-bottom: 20px;
 
     color: #6C4DFF;
+
 }
 
+
 .card-conteudo p {
+
     color: #B5B5C9;
 
     font-size: 17px;
+
     line-height: 1.6;
+
 }
 
 
 /* BOTÕES PRINCIPAIS */
 
 .botoes-entrada {
+
     margin-top: 30px;
+
 }
+
 
 .botao-login,
 .botao-cadastro,
 .botao-sair {
+
     margin: 5px;
 
     padding: 12px 25px;
@@ -133,91 +167,426 @@ main {
     font-weight: bold;
 
     transition: 0.2s ease;
+
 }
 
 
 /* BOTÃO LOGIN */
 
 .botao-login {
+
     background-color: #6C4DFF;
+
     color: #FFFFFF;
+
 }
 
+
 .botao-login:hover {
+
     background-color: #9B8AFF;
 
     transform: translateY(-3px) scale(1.03);
 
     box-shadow: 0 5px 15px rgba(108, 77, 255, 0.35);
+
 }
 
 
 /* BOTÃO CADASTRO */
 
 .botao-cadastro {
+
     background-color: #FF7A00;
+
     color: #FFFFFF;
+
 }
 
+
 .botao-cadastro:hover {
+
     background-color: #FFB347;
 
     transform: translateY(-3px) scale(1.03);
 
     box-shadow: 0 5px 15px rgba(255, 122, 0, 0.35);
+
 }
 
 
 /* BOTÃO SAIR */
 
 .botao-sair {
+
     margin-top: 25px;
 
     background-color: #FF4D5A;
+
     color: #FFFFFF;
+
 }
 
+
 .botao-sair:hover {
+
     background-color: #FF7A83;
 
     transform: translateY(-3px);
 
     box-shadow: 0 5px 15px rgba(255, 77, 90, 0.3);
+
+}
+
+/* BOTÃO MENU */
+
+.botao-menu {
+
+    margin-top: 20px;
+
+    padding: 10px 25px !important;
+
+    border-radius: 8px;
+
+    background-color: #292936 !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+
 }
 
 
-/* ESTATÍSTICAS */
+.botao-menu:hover {
+
+    background-color: #4D7CFE !important;
+
+    transform: translateY(-3px);
+
+}
+
+/* BOTÃO VOLTAR */
+
+.botao-voltar {
+    margin-top: 20px;
+    padding: 10px 25px !important;
+    border-radius: 8px;
+    background-color: #292936 !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #4D7CFE !important;
+    transform: translateY(-2px);
+}
+
+
+/* ESTATÍSTICAS ANTIGAS */
 
 .card-conteudo ul {
+
     margin-top: 15px;
 
     text-align: left;
 
     border-radius: 6px;
+
 }
 
+
 .card-conteudo li {
+
     color: #B5B5C9;
 
     transition: 0.2s ease;
+
 }
 
+
 .card-conteudo li:hover {
+
     padding-left: 8px;
 
     color: #F5F5FA;
+
 }
 
+
 .card-conteudo li.total {
+
     color: #FFD93D;
+
     font-weight: bold;
+
+}
+
+
+/* JOGOS */
+
+.titulo-secao {
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    color: #18A8FF !important;
+
+}
+
+
+.jogos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.card-jogo {
+
+    width: 700px;
+    height: 480px;
+
+    padding: 30px 45px;
+
+    border-radius: 15px;
+
+    background-color: #15151F;
+
+    border: 2px solid #292936;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.card-jogo h3 {
+
+    margin: 0 0 20px;
+
+    color: #6C4DFF;
+
+    font-size: 30px;
+
+}
+
+
+.imagem-jogo {
+
+    width: 180px;
+    height: 180px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.imagem-jogo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 30px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.imagem-jogo img:hover {
+
+    transform: scale(1.06) rotate(-2deg);
+
+    filter: drop-shadow(0 0 12px rgba(108, 77, 255, 0.45));
+
+}
+
+
+.card-jogo p {
+
+    width: 100%;
+
+    min-height: 55px;
+
+    margin: 0 0 25px;
+
+    color: #B5B5C9;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+}
+
+
+.botao-jogar {
+
+    width: 180px;
+
+    margin-top: 0 !important;
+
+    padding: 12px 20px !important;
+
+    border-radius: 7px !important;
+
+    background-color: #6C4DFF !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: bold !important;
+
+    text-align: center !important;
+
+    text-decoration: none;
+
+    display: inline-block !important;
+
+    transition: 0.2s ease;
+
+}
+
+
+.botao-jogar:hover {
+
+    background-color: #9B8AFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(108, 77, 255, 0.35);
+
+}
+
+/* ESTATÍSTICAS NOVAS */
+
+.estatisticas {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0 25px;
+
+}
+
+
+.estatistica {
+
+    width: 130px;
+    min-height: 90px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background-color: #15151F;
+
+    border: 2px solid #292936;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.estatistica span {
+
+    color: #B5B5C9;
+
+    font-size: 14px;
+
+}
+
+
+.estatistica strong {
+
+    margin-top: 5px;
+
+    color: #FFD93D;
+
+    font-size: 28px;
+
+}
+
+
+.estatistica-total {
+
+    border-color: #FF7A00;
+
+}
+
+
+.estatistica-total span {
+
+    color: #FF7A00;
+
+}
+
+
+.estatistica-total strong {
+
+    color: #FFFFFF;
+
+}
+
+
+/* RANKING */
+
+.botao-ranking {
+
+    margin: 10px 0 25px;
+
+    padding: 12px 25px !important;
+
+    border-radius: 8px;
+
+    background-color: #18A8FF !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: bold;
+
+}
+
+
+.botao-ranking:hover {
+
+    background-color: #4D7CFE !important;
+
 }
 
 
 /* RODAPÉ */
 
 footer {
+
     margin: 0 50px 30px;
+
     padding: 30px 20px;
 
     text-align: center;
@@ -229,40 +598,57 @@ footer {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 
     animation: aparecer 0.8s ease;
+
 }
 
+
 footer p {
+
     margin: 6px 0;
 
     color: #FFFFFF;
+
 }
 
+
 footer .nome-site {
+
     margin-bottom: 15px;
 
     color: #6C4DFF;
 
     font-size: 22px;
+
     font-weight: bold;
+
 }
 
+
 footer .email {
+
     margin-bottom: 18px;
 
     color: #B5B5C9;
+
 }
 
+
 .redes-sociais {
+
     margin-top: 10px;
+
 }
+
 
 footer button,
 footer a {
+
     margin: 5px;
 
     padding: 9px 18px;
 
     border: none;
+
     border-radius: 7px;
 
     color: #FFFFFF;
@@ -272,55 +658,77 @@ footer a {
     cursor: pointer;
 
     transition: 0.2s ease;
+
 }
 
 
 /* REDES SOCIAIS */
 
 .botao-linkedin {
+
     background-color: #18A8FF;
+
 }
 
+
 .botao-linkedin:hover {
+
     background-color: #75CFFF;
 
     transform: translateY(-3px);
 
     box-shadow: 0 5px 15px rgba(24, 168, 255, 0.3);
+
 }
+
 
 .botao-twitter {
+
     background-color: #4D7CFE;
+
 }
 
+
 .botao-twitter:hover {
+
     background-color: #75CFFF;
 
     transform: translateY(-3px);
 
     box-shadow: 0 5px 15px rgba(77, 124, 254, 0.3);
+
 }
+
 
 .botao-instagram {
+
     background-color: #FF5CA8;
+
 }
 
+
 .botao-instagram:hover {
+
     background-color: #FF8BC2;
 
     transform: translateY(-3px);
 
     box-shadow: 0 5px 15px rgba(255, 92, 168, 0.3);
+
 }
 
 
 /* GITHUB */
 
 .github {
+
     margin-top: 15px;
+
 }
 
+
 .botao-github {
+
     display: inline-block;
 
     background-color: #6C4DFF;
@@ -328,14 +736,18 @@ footer a {
     color: #FFFFFF;
 
     text-decoration: none;
+
 }
 
+
 .botao-github:hover {
+
     background-color: #9B8AFF;
 
     transform: translateY(-3px);
 
     box-shadow: 0 5px 15px rgba(108, 77, 255, 0.35);
+
 }
 
 
@@ -344,57 +756,84 @@ footer a {
 @keyframes aparecer {
 
     from {
+
         opacity: 0;
+
     }
 
     to {
+
         opacity: 1;
+
     }
 
 }
+
 
 @keyframes subir {
 
     from {
+
         opacity: 0;
+
         transform: translateY(20px);
+
     }
 
     to {
+
         opacity: 1;
+
         transform: translateY(0);
+
     }
 
 }
+
 
 /* FORMULÁRIO */
 
 .card-formulario {
+
     max-width: 550px;
+
 }
+
 
 .card-formulario h1 {
+
     color: #6C4DFF;
+
 }
+
 
 .card-formulario.cadastro h1 {
+
     color: #FF7A00;
+
 }
 
+
 .card-formulario p {
+
     margin-bottom: 30px;
+
 }
 
 
 /* CAMPOS */
 
 .campo-formulario {
+
     margin-bottom: 20px;
 
     text-align: left;
+
 }
 
+
 .campo-formulario label {
+
     display: block;
 
     margin-bottom: 8px;
@@ -402,37 +841,46 @@ footer a {
     color: #F5F5FA;
 
     font-weight: bold;
+
 }
 
+
 .campo-formulario input {
+
     width: 100%;
 
     padding: 12px;
 
     border: 2px solid #292936;
+
     border-radius: 7px;
 
     background-color: #15151F;
+
     color: #F5F5FA;
 
     outline: none;
 
     transition: 0.2s ease;
+
 }
 
 
 /* FOCO NOS CAMPOS */
 
 .campo-formulario input:focus {
+
     border-color: #6C4DFF;
 
     box-shadow: 0 0 8px rgba(108, 77, 255, 0.25);
+
 }
 
 
 /* BOTÃO DO FORMULÁRIO */
 
 .formulario-botao {
+
     width: 100%;
 
     margin-top: 10px;
@@ -440,11 +888,14 @@ footer a {
     padding: 12px;
 
     font-size: 16px;
+
 }
+
 
 /* MENSAGEM DE ERRO */
 
 .mensagem-erro {
+
     margin-bottom: 20px;
 
     padding: 12px;
@@ -452,14 +903,18 @@ footer a {
     border-radius: 7px;
 
     background-color: #FF4D5A;
+
     color: #FFFFFF !important;
 
     font-weight: bold;
+
 }
+
 
 /* MENSAGEM DE SUCESSO */
 
 .mensagem-sucesso {
+
     margin-bottom: 20px;
 
     padding: 12px;
@@ -467,14 +922,18 @@ footer a {
     border-radius: 7px;
 
     background-color: #39D98A;
+
     color: #FFFFFF !important;
 
     font-weight: bold;
+
 }
+
 
 /* AVISO DE ATUALIZAÇÃO */
 
 .aviso-atualizacao {
+
     margin-top: 25px;
 
     padding: 12px;
@@ -482,7 +941,195 @@ footer a {
     border-radius: 7px;
 
     background-color: #292936;
+
     color: #FFD93D !important;
 
     font-weight: bold;
+
+}
+
+/* RANKING */
+
+.conteudo-ranking {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.titulo-ranking {
+    margin-bottom: 10px;
+    color: #18A8FF !important;
+    text-shadow:
+        0 0 5px rgba(24, 168, 255, 0.5),
+        0 0 15px rgba(24, 168, 255, 0.3);
+}
+
+.descricao-ranking {
+    margin-bottom: 30px;
+    color: #B5B5C9;
+    font-size: 17px;
+}
+
+.area-ranking {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #15151F;
+    border: 2px solid #292936;
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.35),
+        inset 0 0 25px rgba(108, 77, 255, 0.04);
+}
+
+.titulo-tabela {
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tabela-ranking {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.tabela-ranking th {
+    padding: 12px 10px;
+    color: #B5B5C9;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabela-ranking td {
+    padding: 14px 10px;
+    background-color: #12121A;
+    border-top: 1px solid #292936;
+    border-bottom: 1px solid #292936;
+    color: #FFFFFF;
+}
+
+.tabela-ranking td:first-child {
+    border-left: 1px solid #292936;
+    border-radius: 8px 0 0 8px;
+}
+
+.tabela-ranking td:last-child {
+    border-right: 1px solid #292936;
+    border-radius: 0 8px 8px 0;
+}
+
+.posicao {
+    color: #B5B5C9 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.jogador {
+    text-align: left;
+    font-weight: bold;
+    color: #FFFFFF !important;
+}
+
+.total {
+    color: #18A8FF !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(24, 168, 255, 0.4);
+}
+
+/* 1º LUGAR - DOURADO */
+
+.primeiro td {
+    background-color: rgba(210, 170, 75, 0.10);
+    border-color: rgba(210, 170, 75, 0.35);
+}
+
+.primeiro .posicao,
+.primeiro .total {
+    color: #D6B45C !important;
+    text-shadow: 0 0 8px rgba(214, 180, 92, 0.30);
+}
+
+/* 2º LUGAR - PRATA */
+
+.segundo td {
+    background-color: rgba(170, 175, 185, 0.08);
+    border-color: rgba(170, 175, 185, 0.22);
+}
+
+.segundo .posicao,
+.segundo .total {
+    color: #AEB4BF !important;
+    text-shadow: 0 0 8px rgba(174, 180, 191, 0.20);
+}
+
+/* 3º LUGAR - BRONZE */
+
+.terceiro td {
+    background-color: rgba(170, 105, 65, 0.08);
+    border-color: rgba(170, 105, 65, 0.25);
+}
+
+.terceiro .posicao,
+.terceiro .total {
+    color: #B87952 !important;
+    text-shadow: 0 0 8px rgba(184, 121, 82, 0.22);
+}
+
+/* 4º AO 10º - LARANJA */
+
+.quarto-decimo td {
+    background-color: rgba(255, 122, 0, 0.055);
+    border-color: rgba(255, 122, 0, 0.18);
+}
+
+.quarto-decimo .posicao,
+.quarto-decimo .total {
+    color: #FF9A3D !important;
+    text-shadow: 0 0 8px rgba(255, 154, 61, 0.25);
+}
+
+/* 11º AO 30º - ROXO */
+
+.decimo-primeiro-trigesimo td {
+    background-color: rgba(108, 77, 255, 0.055);
+    border-color: rgba(108, 77, 255, 0.16);
+}
+
+.decimo-primeiro-trigesimo .posicao,
+.decimo-primeiro-trigesimo .total {
+    color: #9B8AFF !important;
+    text-shadow: 0 0 8px rgba(155, 138, 255, 0.22);
+}
+
+/* ESTRELAS */
+
+.estrela-laranja {
+    color: #FF9A3D;
+    font-size: 22px;
+    text-shadow: 0 0 8px rgba(255, 154, 61, 0.30);
+}
+
+.estrela-roxa {
+    color: #9B8AFF;
+    font-size: 22px;
+    text-shadow: 0 0 8px rgba(155, 138, 255, 0.25);
+}
+
+.medalha {
+    font-size: 22px;
+}
+
+.sem-jogadores {
+    padding: 40px 20px;
+    color: #B5B5C9;
+    font-size: 17px;
+}
+
+.botao-voltar-ranking {
+    margin-top: 25px;
 }

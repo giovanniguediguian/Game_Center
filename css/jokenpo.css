@@ -1,0 +1,171 @@
+/* JOKENPO */
+
+.card-jokenpo {
+    max-width: 800px;
+}
+
+.card-jokenpo h1 {
+    color: #6C4DFF;
+}
+
+.placar-jokenpo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.placar-jokenpo div {
+    min-width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #1E1E2A;
+    border: 2px solid #292936;
+}
+
+.placar-jokenpo span {
+    display: block;
+    color: #B5B5C9;
+    font-size: 14px;
+}
+
+.placar-jokenpo strong {
+    display: block;
+    margin-top: 5px;
+    color: #FFD93D;
+    font-size: 24px;
+}
+
+.jogadas-jokenpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 35px 0 20px;
+}
+
+.jogador-jokenpo {
+    min-width: 150px;
+}
+
+.jogador-jokenpo h2 {
+    color: #F5F5FA;
+    font-size: 20px;
+}
+
+.escolha-jokenpo {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #15151F;
+    border: 2px solid #292936;
+    font-size: 60px;
+}
+
+.versus-jokenpo {
+    color: #FF7A00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contagem-jokenpo {
+    min-height: 45px;
+    margin: 15px 0;
+    color: #FFD93D;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.opcoes-jokenpo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.botao-jokenpo {
+    min-width: 130px;
+    padding: 15px !important;
+    border-radius: 10px;
+    background-color: #6C4DFF !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.botao-jokenpo:hover {
+    background-color: #4D7CFE !important;
+    transform: translateY(-3px);
+}
+
+.botao-jokenpo:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.icone-jokenpo {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.resultado-jokenpo {
+    min-height: 100px;
+    margin: 25px 0;
+}
+
+.resultado-jokenpo h2 {
+    color: #FFD93D;
+    font-size: 28px;
+}
+
+.resultado-jokenpo p {
+    color: #F5F5FA;
+}
+
+.historico-jokenpo {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #15151F;
+    border: 2px solid #292936;
+    text-align: left;
+}
+
+.historico-jokenpo h2 {
+    margin-top: 0;
+    color: #18A8FF;
+    text-align: center;
+}
+
+.historico-jokenpo p {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #1E1E2A;
+    color: #F5F5FA;
+}
+
+.historico-vazio {
+    color: #77778D !important;
+    text-align: center;
+}
+
+.botao-jogar-novamente {
+    margin-top: 20px;
+    padding: 12px 25px !important;
+    border-radius: 8px;
+    background-color: #FF7A00 !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+}
+
+.botao-jogar-novamente:hover {
+    background-color: #FFB347 !important;
+}
