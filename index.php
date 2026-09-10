@@ -44,7 +44,7 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
 
-    <main>
+    <main class="<?php echo isset($_SESSION["id_jogador"]) ? "main-logado" : ""; ?>">
 
         <?php
 

@@ -309,3 +309,115 @@ main {
     background-color: #9B8AFF !important;
     transform: translateY(-3px);
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 30px 15px;
+    }
+
+
+    /* TÍTULO */
+
+    .titulo-jogo {
+        font-size: 26px;
+    }
+
+    .descricao-jogo {
+        font-size: 15px;
+    }
+
+
+    /* PLACAR */
+
+    .placar {
+        gap: 10px;
+    }
+
+    .placar > div {
+        width: 130px;
+        padding: 12px;
+    }
+
+
+    /* CATEGORIAS */
+
+    .categorias {
+        gap: 10px;
+    }
+
+    .categorias button {
+        min-width: 110px;
+        padding: 12px 15px !important;
+    }
+
+
+    /* ÁREA DA FORCA */
+
+    .forca {
+        width: 100%;
+        min-height: 200px;
+        padding: 10px 15px;
+    }
+
+    #desenho-forca {
+        height: 110px;
+    }
+
+
+    /* PALAVRA */
+
+    #palavra {
+        font-size: 28px;
+        letter-spacing: 5px;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ENTRADA */
+
+    .entrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .entrada input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .entrada button {
+        margin-left: 0;
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* MENSAGEM */
+
+    #mensagem {
+        width: 100%;
+        min-height: 50px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+
+    /* DICA */
+
+    .area-dica {
+        margin: 20px 0;
+    }
+
+
+    /* LETRAS TENTADAS */
+
+    #letras-tentadas {
+        margin: 20px auto;
+    }
+
+}

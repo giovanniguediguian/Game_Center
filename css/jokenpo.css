@@ -169,3 +169,126 @@
 .botao-jogar-novamente:hover {
     background-color: #FFB347 !important;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    /* PLACAR */
+
+    .placar-jokenpo {
+        gap: 8px;
+        margin: 20px 0;
+    }
+
+    .placar-jokenpo div {
+        min-width: 95px;
+        padding: 10px 6px;
+    }
+
+    .placar-jokenpo strong {
+        font-size: 22px;
+    }
+
+
+    /* ÁREA DA PARTIDA */
+
+    .jogadas-jokenpo {
+        gap: 8px;
+        margin: 25px 0 15px;
+    }
+
+    .jogador-jokenpo {
+        width: 105px;
+        min-width: 0;
+    }
+
+    .jogador-jokenpo h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .escolha-jokenpo {
+        width: 85px;
+        height: 85px;
+        font-size: 42px;
+        border-radius: 12px;
+    }
+
+    .versus-jokenpo {
+        font-size: 18px;
+        margin: 0 2px;
+    }
+
+
+    /* CONTAGEM */
+
+    .contagem-jokenpo {
+        min-height: 40px;
+        margin: 12px 0;
+        font-size: 25px;
+    }
+
+
+    /* OPÇÕES */
+
+    .opcoes-jokenpo {
+        width: 100%;
+        gap: 7px;
+        margin: 20px 0;
+    }
+
+    .botao-jokenpo {
+        width: 32%;
+        min-width: 0;
+        padding: 10px 4px !important;
+        font-size: 13px;
+    }
+
+    .icone-jokenpo {
+        margin-bottom: 4px;
+        font-size: 24px;
+    }
+
+
+    /* RESULTADO */
+
+    .resultado-jokenpo {
+        min-height: 90px;
+        margin: 20px 0;
+    }
+
+    .resultado-jokenpo h2 {
+        font-size: 22px;
+    }
+
+    .resultado-jokenpo p {
+        font-size: 15px;
+    }
+
+
+    /* HISTÓRICO */
+
+    .historico-jokenpo {
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .historico-jokenpo h2 {
+        font-size: 20px;
+    }
+
+    .historico-jokenpo p {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    /* BOTÃO NOVAMENTE */
+
+    .botao-jogar-novamente {
+        width: 100%;
+        max-width: 220px;
+    }
+
+}

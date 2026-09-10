@@ -410,3 +410,162 @@ main {
     }
 
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 30px 15px;
+    }
+
+
+    /* TÍTULO */
+
+    .titulo-jogo {
+        font-size: 26px;
+    }
+
+    .descricao-jogo {
+        font-size: 15px;
+    }
+
+
+    /* ÁREA DO JOGO */
+
+    .area-jogo {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 25px auto;
+    }
+
+
+    /* PLACAR */
+
+    .placar {
+        gap: 10px;
+    }
+
+    .placar > div {
+        width: 130px;
+        padding: 12px;
+    }
+
+
+    /* SELEÇÃO DE MODO */
+
+    .dificuldades {
+        gap: 10px;
+    }
+
+    .dificuldades button {
+        min-width: 130px;
+        padding: 12px 15px !important;
+    }
+
+
+    /* VEZ */
+
+    .vez {
+        font-size: 16px;
+    }
+
+
+    /* MÃOS */
+
+    .mao-computador,
+    .mao-jogador {
+        margin: 25px auto;
+    }
+
+    .mao-computador h3,
+    .mao-jogador h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .cartas {
+        gap: 8px;
+        min-height: 145px;
+    }
+
+
+    /* CARTAS */
+
+    .carta {
+        width: 75px;
+        height: 110px;
+        margin-bottom: 25px;
+    }
+
+    .valor-superior {
+        top: 5px;
+        left: 6px;
+        font-size: 15px;
+    }
+
+    .naipe-carta {
+        font-size: 34px;
+    }
+
+    .valor-inferior {
+        right: 6px;
+        bottom: 5px;
+        font-size: 15px;
+    }
+
+    .valor-atual {
+        font-size: 14px;
+    }
+
+
+    /* MONTE */
+
+    .monte {
+        width: 75px;
+        height: 110px;
+    }
+
+    .area-monte {
+        margin: 15px auto 30px;
+    }
+
+    .area-monte p {
+        font-size: 13px;
+    }
+
+    #instrucao-monte {
+        font-size: 14px;
+    }
+
+
+    /* AÇÕES */
+
+    .acoes {
+        gap: 10px;
+    }
+
+    .acoes button {
+        min-width: 0;
+        width: 50%;
+        padding: 12px 10px !important;
+    }
+
+
+    /* MENSAGEM */
+
+    #mensagem {
+        width: 100%;
+        min-height: 50px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+
+    /* MENU */
+
+    .botao-menu {
+        margin-top: 35px;
+    }
+
+}

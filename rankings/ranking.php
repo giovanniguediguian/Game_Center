@@ -38,6 +38,8 @@ $sql = "select
 
             on jogadores.id = estatisticas.id_jogador
 
+        where jogadores.nome not in ('GuedigasPC', 'GuedigasMB')
+
         order by total desc, jogadores.nome asc
 
         limit 30";
@@ -53,6 +55,8 @@ $resultado = $conexao->query($sql);
 <head>
 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ranking - Game Center</title>
 
@@ -114,7 +118,7 @@ $resultado = $conexao->query($sql);
 
                 <?php if ($resultado && $resultado->num_rows > 0): ?>
 
-                    <table class="tabela-ranking">
+                    <table class="tabela-ranking ranking-principal">
 
                         <thead>
 
@@ -291,6 +295,19 @@ $resultado = $conexao->query($sql);
                 <?php endif; ?>
 
             </section>
+
+            <div class="rankings-jogos">
+                <h2>Ranking dos jogos</h2>
+                <p>Confira os melhores jogadores em cada jogo.</p>
+
+                <div class="botoes-rankings-jogos">
+                    <a href="Rjokenpo.php?origem=ranking" class="botao-ranking-jogo">JOKENPÔ</a>
+                    <a href="Rforca.php?origem=ranking" class="botao-ranking-jogo">FORCA</a>
+                    <a href="Rvelha.php?origem=ranking" class="botao-ranking-jogo">VELHA</a>
+                    <a href="Rbj.php?origem=ranking" class="botao-ranking-jogo">BLACKJACK</a>
+                    <a href="Rreflexo.php?origem=ranking" class="botao-ranking-jogo">REFLEXO</a>
+                </div>
+            </div>
 
             <div class="botao-voltar-ranking">
 

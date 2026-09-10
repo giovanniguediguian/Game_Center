@@ -15,6 +15,8 @@ $sql = "select
         inner join estatisticas
 
             on jogadores.id = estatisticas.id_jogador
+        
+        where jogadores.nome not in ('GuedigasPC', 'GuedigasMB')
 
         order by estatisticas.reflexo desc, jogadores.nome asc
 
@@ -31,6 +33,8 @@ $resultado = $conexao->query($sql);
 <head>
 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ranking de Reflexo - Game Center</title>
 
@@ -92,7 +96,7 @@ $resultado = $conexao->query($sql);
 
                 <?php if ($resultado && $resultado->num_rows > 0): ?>
 
-                    <table class="tabela-ranking">
+                    <table class="tabela-ranking ranking-jogo">
 
                         <thead>
 
@@ -186,12 +190,28 @@ $resultado = $conexao->query($sql);
 
             <div class="botao-voltar-ranking">
 
+                <?php if (isset($_GET["origem"]) && $_GET["origem"] == "ranking") { ?>
+
+                    <a href="ranking.php" class="botao-voltar-ranking">
+                        VOLTAR AO RANKING
+                    </a>
+
+                <?php } else { ?>
+
+                    <a href="../jogos/reflexo.php" class="botao-voltar-ranking">
+                        VOLTAR AO JOGO
+                    </a>
+
+                <?php } ?>
+
+                <br>
+
                 <a
-                    href="../jogos/reflexo.php"
+                    href="../index.php"
                     class="w3-button botao-menu"
                 >
 
-                    VOLTAR AO JOGO
+                    MENU
 
                 </a>
 
