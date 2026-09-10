@@ -18,11 +18,7 @@ create table estatisticas (
     forca double(10, 2) not null default 0,
     velha double(10, 2) not null default 0,
     blackjack double(10, 2) not null default 0,
-<<<<<<< HEAD
     reflexo double(10,2) not null default 0,
-=======
-    reflexo double(10, 2) not null default 0,
->>>>>>> 576d7b5a9b0f78eed5681d5d6791ccc9a94fc854
     
     constraint pk_estatisticas primary key (id),
     constraint fk_id_jog_est foreign key (id_jogador) references jogadores (id)
