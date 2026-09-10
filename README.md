@@ -134,7 +134,7 @@ Responsável pela lógica do sistema, autenticação, sessões e comunicação c
 
 ### MySQL
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gmg6JydW3nQI3S6DmiByn2JMXvDsu-2WuGDKSQpm0A&s=10" alt="MySQL" width="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR824iW2asIC3ZJmSt5GhKaU_kOldjxWU4TPOaDt06jcw&s=10" alt="MySQL" width="100">
 
 Responsável pelo armazenamento dos jogadores e suas estatísticas.
 
@@ -152,11 +152,13 @@ Utilizado para a estilização e identidade visual do projeto.
 
 ### JavaScript
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtoOyvfTJtuMCJDSOTdBKSqM2am8gH9dednH14pWUaQ&s=10" alt="JavaScript" width="100">
+
 Utilizado na lógica e funcionamento dos jogos, incluindo interações, controles, pontuação e elementos que precisam ser atualizados durante as partidas.
 
 ### W3.CSS
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV87omqLi9DKq4QNOz-rJgGO6wdsFfeJGyX0uEIDu2A&s=10" alt="W3.CSS" width="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkEPmsyiCmIuy9nEvGqXwN81hJurb22VMm0viH4vtvA&s" alt="W3.CSS" width="100">
 
 Utilizado como apoio na estilização dos elementos da interface.
 
