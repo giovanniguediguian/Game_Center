@@ -14,11 +14,11 @@ create table jogadores (
 create table estatisticas (
 	id int not null auto_increment,
     id_jogador int not null unique,
-    jokenpo int not null default 0,
-    forca int not null default 0,
-    velha int not null default 0,
-    blackjack int not null default 0,
-    reflexo int not null default 0,
+    jokenpo double(10, 2) not null default 0,
+    forca double(10, 2) not null default 0,
+    velha double(10, 2) not null default 0,
+    blackjack double(10, 2) not null default 0,
+    reflexo double(10, 2) not null default 0,
     
     constraint pk_estatisticas primary key (id),
     constraint fk_id_jog_est foreign key (id_jogador) references jogadores (id)
